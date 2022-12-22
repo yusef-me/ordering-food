@@ -1,0 +1,62 @@
+body {
+    background-color: #566573;
+}
+
+.food-img {
+    width: 620px;
+    height: 395px;
+    min-width: 10rem;
+}
+
+.buy-card {
+    width: 250px;
+    height: 395px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.price {
+    font-size: 25px;
+}
+
+.pd-section-1 {
+    background-color: white;
+    color: #4d3639;
+}
+
+.discription {
+    color: white;
+    background-color: #566573;
+}
+
+.pd-section-2 {
+    text-align: center;
+    background-color: #EAECEE;
+    color: #2C3E50;
+}
+
+.ingredients {
+    width: 150px;
+    height: 150px;
+}
+
+.pd-section-3 {
+    background-color: #D6DBDF;
+    color: #2C3E50;
+}
+
+.progress {
+    height: 5px;
+}
+
+.pd-section-4 {
+    background-color: #E5E8E8;
+    color: #2C3E50;
+}
+
+.comments-img {
+    width: 100px;
+    height: 100px;
+}
+

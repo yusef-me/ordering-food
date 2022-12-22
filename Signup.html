@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ثبت حساب</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/spoon-icon.PNG">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="signup-content d-flex flex-column justify-content-center align-items-center">
+
+    <!--signup-card-->
+    <div class="signup-card card p-3">
+
+        <div class="d-flex justify-content-center align-items-center text-danger my-3">
+            <a href="home-page.html" class="btn text-danger">
+                <h2>رستوران</h2>
+            </a>
+        </div>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="username-label">نام کاربری</label>
+                <input type="text" class="form-control form-control-sm is-invalid" id="username-label">
+            </div>
+            <div class="form-group">
+                <label for="email-label">ایمیل</label>
+                <input type="email" class="form-control form-control-sm" id="email-label">
+            </div>
+            <div class="form-group">
+                <label for="pass-label">رمز عبور</label>
+                <input type="password" class="form-control form-control-sm" id="pass-label">
+            </div>
+            <div class="form-group">
+                <label for="repass-label">تکرار رمز عبور</label>
+                <input type="password" class="form-control form-control-sm" id="repass-label">
+            </div>
+            <small>قبلا ثبت نام کرده اید؟ <a href="Login.html">وارد شوید</a></small>
+            <button type="submit" class="btn btn-block btn-primary mt-3" id="Button">
+                ثبت حساب
+            </button>
+        </form>
+    </div>
+
+    <!--alert-->
+    <div class="alert alert-danger" role="alert" id="Alert">
+        <p class="m-0 p-0"><i class="fa fa-exclamation-triangle mx-1"></i>نام کاربری اشتباه است.</p>
+    </div>
+
+</div>
+
+</body>
+
+<!--check-input-js-->
+<script src="js/validation-register.js"></script>
+
+</html>

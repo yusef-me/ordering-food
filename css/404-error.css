@@ -1,0 +1,27 @@
+body {
+    background-color: #FAACA8;
+    background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+}
+
+.content {
+    height: 100vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.sm-content {
+    display: none;
+}
+
+@media screen and (max-width: 522px) {
+    .md-content {
+        display: none;
+    }
+
+    .sm-content {
+        display: block;
+    }
+}

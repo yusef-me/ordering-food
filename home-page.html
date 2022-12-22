@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>صفحه اصلی</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/spoon-icon.PNG">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<!--logo navbar-->
+<nav class="navbar navbar-light d-flex justify-content-center align-items-center" id="logo-navbar">
+    <a class="navbar-brand text-light btn" href="home-page.html">
+        <h2>رستوران</h2>
+    </a>
+</nav>
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="Navbar">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-items" aria-controls="navabr-items" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!--content-right-navbar-->
+    <div class="collapse navbar-collapse" id="navbar-items">
+        <div class="navbar-nav float-right">
+            <div class="dropdown p-0 m-0">
+                <a class="nav-item nav-link dropdown dropdown-toggle font-weight-bold text-dark p-0 m-0"
+                   data-toggle="dropdown" href="#">
+                    <img src="img/home-top-img2.jpg" class="img-fluid rounded-circle pro-nav-img" alt="">
+                    حساب کاربری
+                </a>
+                <div class="dropdown-menu text-center">
+                    <a class="dropdown-item red" href="profile-page.html">پروفایل</a>
+                    <a class="dropdown-item red" href="cart-page.html">سفارشات</a>
+                    <a class="dropdown-item red" href="#">شارژ کیف پول</a>
+                    <i class="fa fa-power-off text-center mt-3 red" title="خروج از حساب"></i>
+                </div>
+            </div>
+            <a class="nav-item nav-link font-weight-bold text-dark my-sm-1" href="home-page.html">صفحه اصلی</a>
+            <a class="nav-item nav-link font-weight-bold text-dark my-sm-1" href="product-page.html">محصولات</a>
+            <a class="nav-item nav-link font-weight-bold text-dark my-sm-1" href="aboutus-page.html">درباره ما</a>
+            <a class="nav-item nav-link font-weight-bold text-dark my-sm-1" href="contactus-page.html">ارتباط با ما</a>
+            <div class="search-shoppingcart-container d-block d-sm-none">
+                <a class="nav-search-btn btn" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a type="button" class="nav-shoppingcart-btn btn" href="cart-page.html">
+                    <span class="badge badge-danger ml-1">4</span>
+                    <i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--content-left-navbar-->
+    <div class="d-flex" id="content-left-navbar">
+        <a class="d-none d-sm-block btn my-sm-1" data-toggle="modal" data-target="#search-modal">
+            <i class="fa fa-search"></i>
+        </a>
+        <a type="button" class="d-none d-sm-block btn my-sm-1" href="cart-page.html">
+            <span class="badge badge-danger ml-1">4</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a type="button" href="Login.html" class="register-btn btn btn-outline-info my-sm-1">
+            ورود
+            /
+            ثبت نام
+        </a>
+    </div>
+
+</nav>
+
+
+<!--home-content-->
+<div class="d-flex flex-wrap align-items-center justify-content-center" id="content-top-hom">
+
+    <div class="text-center text-light flex-wrap bg-dark border-dark
+         align-items-center rounded p-1 p-md-3 px-5">
+        <h3 class="mb-3">خرید غذای خود را به ما بسپارید</h3>
+        <h6>همین حالا اولین سفارش خود را با ۳۰% تخفیف انجام دهید </h6>
+        <button type="button" class="btn btn btn-outline-danger my-3">محصولات</button>
+    </div>
+
+</div>
+
+
+<!--carousel-->
+<div class="carousel slide h-100 bg-dark" data-ride="carousel" id="home-carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#home-carousel" data-slide-to="1"></li>
+        <li data-target="#home-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="container-fluid p-5">
+                <div class="card-deck row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container-fluid p-5">
+                <div class="card-deck row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="container-fluid p-5">
+                <div class="card-deck row">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-md-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3 d-none d-lg-block">
+                        <section class="card mb-4 d-flex mx-auto products-card">
+                            <a href="product-details.html">
+                                <img src="img/hom-top-img1.jpg" class="card-img-top img-fluid" alt="">
+                            </a>
+                            <div class="card-body text-center">
+                                <a href="product-details.html" class="btn text-center">
+                                    <h5 class="card-title m-0 red">خورشت قورمه سبزی</h5></a>
+                                <div class="d-none d-sm-block">
+                                    <div>
+                                        <i class="btn btn-sm fa fa-star text-danger" title="امتیاز">۴.۵</i>
+                                        <i class="btn btn-sm fa fa-clock-o text-danger" title="زمان ارسال">
+                                            <span class="ml-1">۳۰min</span></i>
+                                        <button type="submit" class="btn fa fa-bookmark-o text-danger"
+                                                title="افزودن به علاقه مندی ها">
+                                        </button>
+                                        <button type="submit" class="btn fa fa-heart-o text-danger"
+                                                title="پسندیدن"></button>
+                                    </div>
+                                    <p class="card-text text-truncate"> قورمه سبزی غذایی است که به جرات می توان گفت
+                                        بیشتر
+                                        مردم ایران آن رادوست دارندو دربین مردم جا
+                                        افتاده است.به ندرت پیش می‌آید کسی این خورشت لذیذ و اصیل را دوست نداشته باشد.</p>
+                                </div>
+                                <a class="btn btn-outline-danger mt-2 mt-md-3 d-block" href="product-details.html">
+                                    اطلاعات
+                                    بیشتر</a>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#home-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#home-carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+
+<!--section-1-->
+<div class="p-md-5 p-3 text-center section-1">
+    <h3 class="text-dark">رستوران</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aspernatur at consequatur dignissimos dolorum
+        ducimus eius eligendi ex excepturi magnam nemo, neque omnis pariatur, qui rem, reprehenderit veniam veritatis
+        voluptatum!
+    </p>
+</div>
+
+
+<div class="bgimg-2" style=';background-image: url("img/food2.PNG")'>
+    <div class="caption">
+        <h1>چرا رستوران؟؟!</h1>
+    </div>
+</div>
+
+
+<!--why-->
+<div class="p-2 p-md-5 text-center">
+    <div class="py-4">
+        <h4>تنوع در محصول</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi
+            debitis delectus ducimus, earum enim excepturi facere fuga illo illum itaque, labore numquam, optio placeat
+            quaerat soluta veritatis voluptatibus.
+        </p>
+    </div>
+    <hr>
+    <div class="py-4">
+        <h4>راحتی در خرید</h4>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda cupiditate deleniti, dicta
+            distinctio, doloribus error, ex facilis iure maxime molestias officiis praesentium provident quas ratione
+            rerum
+            saepe sunt voluptatibus!
+        </p>
+    </div>
+    <hr>
+    <div class="py-4">
+        <h4>پشتیبانی سریع</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquid atque distinctio eius eos, est ex
+            expedita id in possimus, qui quo recusandae, saepe voluptas voluptates! Ab asperiores cupiditate quae
+            quibusdam ullam.</p>
+    </div>
+</div>
+
+
+<div class="bgimg-2" style='background-image: url("img/food2.PNG")'>
+</div>
+
+
+<!--how-it-works-->
+<div class="p-md-5 p-3 text-center d-flex flex-column justify-content-center align-items-center how-it-works">
+
+    <h3>رستوران چگونه کار می کند؟؟</h3>
+
+    <div class="row text-center p-0 m-0">
+        <div class="col-12 col-md-4 p-0 m-0" id="check-logo">
+            <p class="fa fa-spoon mt-3"></p>
+            <h4>سفارش</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+        <div class="col-12 col-md-4 p-0 m-0" id="truck-logo">
+            <p class="fa fa-check mt-3"></p>
+            <h4>خرید</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus?</p>
+        </div>
+        <div class="col-12 col-md-4 p-0 m-0" id="spoon-logo">
+            <p class="fa fa-truck mt-3"></p>
+            <h4>ارسال</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer class="footer bg-dark text-light container-fluid py-1">
+    <p class="text-center mt-1">رستوران، فروشگاه اینترنتی خرید وعده غذایی در مشهد.</p>
+    <hr>
+    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <div>
+            <p class="m-0">رستوران را در شبکه های اجتماعی دنبال کنید:</p>
+            <a href="#" class="btn fa fa-instagram text-danger"></a>
+            <a href="#" class="btn fa fa-telegram text-danger"></a>
+            <a href="#" class="btn fa fa-facebook text-danger"></a>
+            <a href="#" class="btn fa fa-youtube-play text-danger"></a>
+            <a href="#" class="btn fa fa-twitter text-danger"></a>
+        </div>
+
+        <small>
+            <i class="fa fa-copyright ml-2"></i>
+            تمامی حقوق مادی و معنوی این سایت متعلق به
+            رستوران می باشد. ۱۴۰۰
+        </small>
+    </div>
+</footer>
+
+
+<!--scroll-btn-->
+<a href="#" id="scroll-btn"><span></span></a>
+
+
+<!--search-modal-->
+<div class="modal fade" id="search-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body bg-transparent">
+                <form>
+                    <div class="input-group" style="direction: ltr">
+                        <input class="form-control rounded-left flex-fill text-right"
+                               type="search" placeholder="جستجو"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<!--scroll-btn-js-->
+<script src="js/scroll-btn.js"></script>
+
+</html>

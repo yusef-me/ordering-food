@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ارتباط با ما</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/spoon-icon.PNG">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<!--logo navbar-->
+<nav class="navbar navbar-light d-flex justify-content-center align-items-center" id="logo-navbar">
+    <a class="navbar-brand text-light" href="home-page.html">
+        <h2>رستوران</h2>
+    </a>
+</nav>
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="Navbar">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-items" aria-controls="navabr-items" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!--content-right-navbar-->
+    <div class="collapse navbar-collapse" id="navbar-items">
+        <div class="navbar-nav float-right">
+            <div class="dropdown mr-2">
+                <a class="nav-item nav-link dropdown dropdown-toggle font-weight-bold text-dark"
+                   data-toggle="dropdown" href="#">
+                    <i class="fa fa-user-circle-o ml-2"></i>حساب کاربری
+                </a>
+                <div class="dropdown-menu text-center">
+                    <a class="dropdown-item">
+                        موجودی حساب:
+                        <p class="text-success">365.02 تومان</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="cart-page.html">سفارشات</a>
+                    <a class="dropdown-item" href="#">شارژ کیف پول</a>
+                    <i class="fa fa-power-off text-center mt-3 red" title="خروج از حساب"></i>
+                </div>
+            </div>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="home-page.html">صفحه اصلی</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="product-page.html">محصولات</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="aboutus-page.html">درباره ما</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="contactus-page.html">ارتباط با ما</a>
+            <div class="search-shoppingcart-container d-block d-sm-none">
+                <a class="nav-search-btn btn" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a type="button" class="nav-shoppingcart-btn btn" href="cart-page.html">
+                    <span class="badge badge-danger ml-1">4</span>
+                    <i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--content-left-navbar-->
+    <div class="d-flex" id="content-left-navbar">
+        <a class="d-none d-sm-block btn" data-toggle="modal" data-target="#search-modal">
+            <i class="fa fa-search"></i>
+        </a>
+        <a type="button" class="d-none d-sm-block btn" href="cart-page.html">
+            <span class="badge badge-danger ml-1">4</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a type="button" href="Login.html" class="register-btn btn btn-outline-info">
+            ورود
+            /
+            ثبت نام
+        </a>
+    </div>
+
+</nav>
+
+
+<div class="bgimg-5" style='background-image: url("img/office img.PNG")'>
+</div>
+
+<!--contactus-content-->
+<div class="p-3 p-md-5 contactus-content d-flex flex-column justify-content-center align-items-center text-right">
+    <h2 class="text-center">ارتباط با رستوران</h2>
+    <hr>
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="col-12 col-md-6 my-3">
+                    <label for="username"><small>نام و نام خانوادگی</small></label>
+                    <input type="text" class="form-control" id="username">
+                </div>
+                <div class="col-12 col-md-6 my-3">
+                    <label for="issue"><small>موضوع</small></label>
+                    <select class="form-control" id="issue">
+                        <option>انتخاب موضوع</option>
+                        <option>پیشنهاد</option>
+                        <option>شکایت</option>
+                        <option>پیگیری سفارش</option>
+                        <option>مدیریت</option>
+                        <option>حسابداری و امور مالی</option>
+                        <option>سایر موضوعات</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-6 my-3">
+                    <label for="email"><small>ایمیل</small></label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="col-12 col-md-6 my-3">
+                    <label for="phone"><small>تلفن تماس</small></label>
+                    <input type="text" class="form-control is-invalid" id="phone"
+                           onkeypress='validate(event)'>
+                </div>
+                <label for="Textarea">متن پیام</label>
+                <textarea class="form-control" id="Textarea" rows="2">
+                </textarea>
+                <button type="button" class="btn btn-secondary mt-3" id="Button">ثبت و ارسال</button>
+            </div>
+        </form>
+        <br>
+        <hr>
+        <div class="text-center mt-3">
+            <p class="m-0">رستوران را در شبکه های اجتماعی دنبال کنید:</p>
+            <a href="#" class="btn fa fa-instagram text-danger"></a>
+            <a href="#" class="btn fa fa-telegram text-danger"></a>
+            <a href="#" class="btn fa fa-facebook text-danger"></a>
+            <a href="#" class="btn fa fa-youtube-play text-danger"></a>
+            <a href="#" class="btn fa fa-twitter text-danger"></a>
+        </div>
+        <hr>
+
+        <!--alert-->
+        <div class="alert alert-danger" role="alert" id="Alert">
+            <p class="m-0 p-0"><i class="fa fa-exclamation-triangle mx-1"></i>نام کاربری اشتباه است.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="bgimg-5" style='background-image: url("img/office img.PNG")'>
+</div>
+
+
+<!--footer-->
+<footer class="footer bg-dark text-light container-fluid py-1">
+    <p class="text-center mt-1">رستوران، فروشگاه اینترنتی خرید وعده غذایی در مشهد.</p>
+    <hr>
+    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <div>
+            <p class="m-0">رستوران را در شبکه های اجتماعی دنبال کنید:</p>
+            <a href="#" class="btn fa fa-instagram text-danger"></a>
+            <a href="#" class="btn fa fa-telegram text-danger"></a>
+            <a href="#" class="btn fa fa-facebook text-danger"></a>
+            <a href="#" class="btn fa fa-youtube-play text-danger"></a>
+            <a href="#" class="btn fa fa-twitter text-danger"></a>
+        </div>
+
+        <small>
+            <i class="fa fa-copyright ml-2"></i>
+            تمامی حقوق مادی و معنوی این سایت متعلق به
+            رستوران می باشد. ۱۴۰۰
+        </small>
+    </div>
+</footer>
+
+
+<!--search-modal-->
+<div class="modal fade" id="search-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body bg-transparent">
+                <form>
+                    <div class="input-group" style="direction: ltr">
+                        <input class="form-control rounded-left flex-fill text-right"
+                               type="search" placeholder="جستجو"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--scroll-btn-->
+<a href="#" id="scroll-btn"><span></span></a>
+
+
+</body>
+
+<!--check-input-js-->
+<script src="js/validation-register.js"></script>
+
+<!--input-valid-number-->
+<script src="js/input-valid-number.js"></script>
+
+<!--scroll-btn-js-->
+<script src="js/scroll-btn.js"></script>
+
+</html>

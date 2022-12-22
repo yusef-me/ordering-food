@@ -1,0 +1,48 @@
+@media screen and (max-width: 767px) {
+    .info-content {
+        padding-bottom: 10rem;
+    }
+}
+
+.info-card {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.edit-input, .edit-btn {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.buy-card {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+}
+
+.card-buy-info {
+    width: 250px;
+    height: 220px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-buy-info-mobile {
+    width: 250px;
+    height: 150px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+
+.fixed-bottom {
+    box-shadow: 8px 8px 8px 10px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 8px 8px 8px 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 8px 8px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients {
+    width: 100px;
+    height: 100px;
+}

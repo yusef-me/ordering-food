@@ -1,0 +1,165 @@
+/*main*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('font/Vazir.eot');
+    src: url('font/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('font/Vazir.woff2') format('woff2'),
+    url('font/Vazir.woff') format('woff'),
+    url('font/Vazir.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('font/Vazir-Bold.eot');
+    src: url('font/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('font/Vazir-Bold.woff2') format('woff2'),
+    url('font/Vazir-Bold.woff') format('woff'),
+    url('font/Vazir-Bold.ttf') format('truetype');
+}
+
+body {
+    direction: rtl;
+    font-family: 'Vazir';
+    font-weight: normal;
+}
+
+/*navbar*/
+
+#logo-navbar {
+    background-color: red;
+}
+
+#Navbar {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#navbar-items {
+    position: relative;
+}
+
+.nav-item, .dropdown-item {
+    text-align: right;
+}
+
+.pro-nav-img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.search-shoppingcart-container {
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+}
+
+#content-left-navbar {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.register-btn {
+    -webkit-animation: register-btn .6s 1s both;
+    -moz-animation: register-btn .6s 1s both;
+    -o-animation: register-btn .6s 1s both;
+    animation: register-btn .6s 1s both
+}
+
+@-webkit-keyframes register-btn {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes register-btn {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes register-btn {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+@keyframes register-btn {
+    0%, 50%, 100% {
+        opacity: 1
+    }
+    25%, 75% {
+        opacity: 0
+    }
+}
+
+/*footer*/
+
+.fa-instagram, .fa-telegram, .fa-facebook, .fa-youtube-play, .fa-twitter, .fa-copyright, .fa-clock-o, .fa-group, .fa-mobile-phone {
+    font-size: 20px;
+}
+
+/*scroll-btn*/
+
+#scroll-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    text-indent: -9999px;
+    display: none;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
+#scroll-btn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -12px;
+    height: 0;
+    width: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #ffffff;
+}
+
+#scroll-btn:hover {
+    background-color: #e74c3c;
+    opacity: 1;
+    filter: "alpha(opacity=100)";
+    -ms-filter: "alpha(opacity=100)";
+}
+
+
+/*--------------------------------*/
+
+.red:hover {
+    color: red;
+}

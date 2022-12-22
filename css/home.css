@@ -1,0 +1,126 @@
+#content-top-hom {
+    background: url("../img/Animated Shape.svg");
+    height: calc(100vh - 126px);
+}
+
+.section-1 {
+    color: #777;
+    background-color: #ebebeb;
+}
+
+#home-carousel {
+    direction: ltr;
+    height: calc(100vh / 2);
+    display: flex;
+    flex-direction: ;
+}
+
+.carousel-item {
+    direction: rtl;
+}
+
+.how-it-works {
+    background-color: red;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+.fa-check, .fa-truck, .fa-spoon {
+    font-size: 50px;
+}
+
+#check-logo:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#truck-logo:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+#spoon-logo:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/*-----------------------------------------------------------------------*/
+
+.bgimg-1, .bgimg-2, .bgimg-5 {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.bgimg-1 {
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    min-height: 200px;
+}
+
+.bgimg-5 {
+    min-height: 300px;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+}
+
+.just-now {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+
+/*@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+        background-attachment: scroll;
+    }
+}*/
+
+/*--------------------------*/
+
+/*aboutus-page*/
+
+.description {
+    color: #777;
+}
+
+/*--------------------------*/
+
+/*contactus-page*/
+
+.contactus-content {
+    position: relative;
+    color: #777;
+}
+
+#Alert {
+    position: absolute;
+    bottom: 25rem;
+    right: 1rem;
+    display: none
+}

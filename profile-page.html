@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پروفایل</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/profile-style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<!--logo navbar-->
+<nav class="navbar navbar-light d-flex justify-content-center align-items-center" id="logo-navbar">
+    <a class="navbar-brand text-light" href="home-page.html">
+        <h2>رستوران</h2>
+    </a>
+</nav>
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light" id="Navbar">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-items" aria-controls="navabr-items" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!--content-right-navbar-->
+    <div class="collapse navbar-collapse" id="navbar-items">
+        <div class="navbar-nav float-right">
+            <div class="dropdown mr-2">
+                <a class="nav-item nav-link dropdown dropdown-toggle font-weight-bold text-dark"
+                   data-toggle="dropdown" href="#">
+                    <i class="fa fa-user-circle-o ml-2"></i>حساب کاربری
+                </a>
+                <div class="dropdown-menu text-center">
+                    <a class="dropdown-item">
+                        موجودی حساب:
+                        <p class="text-success">365.02 تومان</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="cart-page.html">سفارشات</a>
+                    <a class="dropdown-item" href="#">شارژ کیف پول</a>
+                    <i class="fa fa-power-off text-center mt-3 red" title="خروج از حساب"></i>
+                </div>
+            </div>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="home-page.html">صفحه اصلی</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="product-page.html">محصولات</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="aboutus-page.html">درباره ما</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="contactus-page.html">ارتباط با ما</a>
+            <div class="search-shoppingcart-container d-block d-sm-none">
+                <a class="nav-search-btn btn" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a type="button" class="nav-shoppingcart-btn btn" href="cart-page.html">
+                    <span class="badge badge-danger ml-1">4</span>
+                    <i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--content-left-navbar-->
+    <div class="d-flex" id="content-left-navbar">
+        <a class="d-none d-sm-block btn" data-toggle="modal" data-target="#search-modal">
+            <i class="fa fa-search"></i>
+        </a>
+        <a type="button" class="d-none d-sm-block btn" href="cart-page.html">
+            <span class="badge badge-danger ml-1">4</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a type="button" href="Login.html" class="register-btn btn btn-outline-info">
+            ورود
+            /
+            ثبت نام
+        </a>
+    </div>
+
+</nav>
+
+
+<!--mobile-dashboard-->
+<nav class="bg-dark d-flex flex-wrap justify-content-center align-items-center d-block d-md-none sticky-top">
+    <a type="button" class="btn btn-sm btn-outline-primary m-1"
+       data-toggle="modal" data-target="#edit-modal">
+        <p class="p-0 m-0"><i class="fa fa-pencil ml-1"></i>ویرایش اطلاعات</p>
+    </a>
+    <a type="button" class="btn btn-sm btn-outline-primary m-1">
+        <p class="p-0 m-0"><i class="fa fa-bookmark ml-1"></i>علاقه مندی ها</p>
+    </a>
+    <a type="button" class="btn btn-sm btn-outline-primary m-1">
+        <p class="p-0 m-0"><i class="fa fa-envelope-o ml-1"></i>پیام ها</p>
+    </a>
+    <a href="cart-page.html" type="button" class="btn btn-sm btn-outline-primary m-1">
+        <p class="p-0 m-0"><i class="fa fa-check ml-1"></i>سفارشات</p>
+    </a>
+    <a type="button" class="btn btn-sm btn-outline-primary m-1">
+        <p class="p-0 m-0"><i class="fa fa-power-off ml-1"></i>خروج</p>
+    </a>
+</nav>
+
+
+<!--profile-content-->
+<div class="container-lg my-4">
+
+
+    <div class="row">
+
+
+        <!--dashboard-->
+        <div class="col-md-4 mx-auto d-none d-md-block dashboard-div">
+            <div class="card border-0">
+                <div class="card card-body border-info text-center dashboard-card">
+                    <div class="mb-2">
+                        <img src="img/food2.PNG" alt=""
+                             class="img-fluid rounded-circle dashboard-img">
+                    </div>
+                    <strong>یوسف مهدی زاده</strong>
+                    <hr>
+                    <div class="row">
+                        <a type="button" class="btn btn-sm"
+                           data-toggle="modal" data-target="#edit-modal">
+                            <p class="red"><i class="fa fa-pencil ml-1"></i>ویرایش اطلاعات</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a type="button" class="btn btn-sm">
+                            <p class="red"><i class="fa fa-bookmark ml-1"></i>علاقه مندی ها</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a type="button" class="btn btn-sm">
+                            <p class="red"><i class="fa fa-envelope-o ml-1"></i>پیام ها</p>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <a href="cart-page.html" type="button" class="btn btn-sm">
+                            <p class="red"><i class="fa fa-check ml-1"></i>سفارشات</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <a type="button" class="btn btn-sm">
+                            <p class="red"><i class="fa fa-power-off ml-1"></i>خروج</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--info-->
+        <div class="col-12 col-md-8 mx-auto info-div m-auto">
+            <div class="card card-body border-0">
+                <div class="card p-3 text-center info-card">
+                    <h5>اطلاعات حساب</h5>
+                    <hr>
+                    <div class="container-md row mx-auto my-3 d-flex justify-content-center align-items-center">
+                        <div class="col-6 col-sm-4 text-center ali">
+                            <!--  <i class="fa fa-user-o"></i>-->
+                            <small class="d-block">نام و نام خانوادگی:</small>
+                            یوسف مهدیزاده
+                        </div>
+                        <div class="col-6 col-sm-4 text-center ali">
+                            <!--   <i class="fa fa-mobile-phone"></i>-->
+                            <small class="d-block">شماره تلفن همراه:</small>
+                            09165165165
+                        </div>
+                        <div class="col-12 col-sm-4 text-center user-email text-truncate ali">
+                            <!-- <i class="fa fa-envelope-o"></i>-->
+                            <small class="d-block">پست الکترونیک:</small>
+                            <small>sdvsdvsd@dfvdfvdfv.com</small>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="mx-2 text-center text-md-right">
+                            <!--  <i class="fa fa-address-card-o"></i>-->
+                            آدرس:
+                            <br>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur culpa ipsum
+                            natus nostrum possimus quam quas reiciendis vel veniam!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+
+<!--edit-modal-->
+<div class="modal fade text-right" id="edit-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+
+            <button type="button" class="btn text-right close m-3" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+
+            <div class="modal-body">
+
+                <ul class="nav nav-pills justify-content-center" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="personal-info" data-toggle="tab"
+                           href="#personal-info-modal"
+                           role="tab"
+                           aria-controls="home"
+                           aria-selected="true">اطلاعات شخصی</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="user-info" data-toggle="tab"
+                           href="#user-info-modal"
+                           role="tab"
+                           aria-controls="profile"
+                           aria-selected="false">اطلاعات کاربری</a>
+                    </li>
+                </ul>
+                <br>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="personal-info-modal">
+
+                        <!--personal-info-->
+                        <form>
+                            <div class="form-row">
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="name"><small>نام</small></label>
+                                    <input type="text" class="form-control form-control-sm" id="name">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="family"><small>نام خانوادگی</small></label>
+                                    <input type="text" class="form-control form-control-sm" id="family">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="phone-number"><small>شماره موبایل</small></label>
+                                    <input type="text" class="form-control form-control-sm"
+                                           oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');"
+                                           id="phone-number">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="email"><small>ایمیل</small></label>
+                                    <input type="email" class="form-control form-control-sm" id="email">
+                                </div>
+                                <div class="col-12 my-2">
+                                    <label for="address"><small>آدرس</small></label>
+                                    <input type="text" class="form-control mb-3 form-control-sm" id="address">
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                    ثبت اطلاعات
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="tab-pane fade" id="user-info-modal" role="tabpanel" aria-labelledby="user-info">
+
+                        <!--user-info-->
+                        <form>
+                            <div class="form-row">
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="user-name"><small>نام کاربری</small></label>
+                                    <input type="text" class="form-control form-control-sm" id="user-name">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="current-password"><small>رمز عبور فعلی</small></label>
+                                    <input type="password" class="form-control form-control-sm" id="current-password">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="password"><small>رمز عبور جدید</small></label>
+                                    <input type="password" class="form-control form-control-sm" value="" id="password">
+                                </div>
+                                <div class="col-12 col-md-6 my-2">
+                                    <label for="re-password"><small>تکرار رمز عبور</small></label>
+                                    <input type="password" class="form-control form-control-sm" value=""
+                                           id="re-password">
+                                </div>
+                                <div class="input-group my-2">
+                                    <div class="custom-file">
+                                        <label class="custom-file-label text-left" for="select-img">
+                                            انتخاب عکس پروفایل</label>
+                                        <input type="file" class="custom-file-input form-control-sm" alt=""
+                                               id="select-img">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-sm btn-outline-danger mt-2">
+                                    ثبت اطلاعات
+                                </button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer class="footer bg-dark text-light container-fluid py-1">
+    <p class="text-center mt-1">رستوران، فروشگاه اینترنتی خرید وعده غذایی در مشهد.</p>
+    <hr>
+    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <div>
+            <p class="m-0">رستوران را در شبکه های اجتماعی دنبال کنید:</p>
+            <a href="#" class="btn fa fa-instagram text-danger"></a>
+            <a href="#" class="btn fa fa-telegram text-danger"></a>
+            <a href="#" class="btn fa fa-facebook text-danger"></a>
+            <a href="#" class="btn fa fa-youtube-play text-danger"></a>
+            <a href="#" class="btn fa fa-twitter text-danger"></a>
+        </div>
+
+        <small>
+            <i class="fa fa-copyright ml-2"></i>
+            تمامی حقوق مادی و معنوی این سایت متعلق به
+            رستوران می باشد. ۱۴۰۰
+        </small>
+    </div>
+</footer>
+
+
+<!--scroll-btn-->
+<a href="#" id="scroll-btn"><span></span></a>
+
+
+<!--search-modal-->
+<div class="modal fade" id="search-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body bg-transparent">
+                <form>
+                    <div class="input-group" style="direction: ltr">
+                        <input class="form-control rounded-left flex-fill text-right"
+                               type="search" placeholder="جستجو"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+
+<!--input-valid-number-->
+<script src="js/input-valid-number.js"></script>
+
+
+<!--scroll-btn-js-->
+<script src="js/scroll-btn.js"></script>
+
+</html>

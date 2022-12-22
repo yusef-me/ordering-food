@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ورود</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/spoon-icon.PNG">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="signup-content d-flex flex-column justify-content-center align-items-center">
+
+
+    <!--signup-card-->
+    <div class="signup-card card p-3">
+
+        <div class="d-flex justify-content-center align-items-center text-danger my-3">
+            <a href="home-page.html" class="btn text-danger">
+                <h2>رستوران</h2>
+            </a>
+        </div>
+        <br>
+        <form>
+            <div class="form-group">
+                <label for="username-label">نام کاربری</label>
+                <input type="text" class="form-control form-control-sm is-invalid" id="username-label">
+            </div>
+            <div class="form-group">
+                <label for="pass-label">رمز عبور</label>
+                <input type="password" class="form-control form-control-sm" id="pass-label">
+            </div>
+            <div class="form-group">
+                <label for="repass-label">تکرار رمز عبور</label>
+                <input type="password" class="form-control form-control-sm" id="repass-label">
+            </div>
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label mr-3" for="exampleCheck1">
+                    <small> مرا به خاطر داشته باش</small>
+                </label>
+            </div>
+            <hr>
+            <small class="d-block">
+                رمز خود را فراموش کرده اید؟
+                <a data-toggle="collapse" href="#import-email" role="button"
+                   aria-expanded="false" aria-controls="import-email">کلیک کنید</a>
+            </small>
+            <div class="collapse my-3" id="import-email">
+                <form>
+                    <div class="form-group d-block">
+                        <label for="re-pass">
+                            <small>ایمیل خود را وارد کنید</small>
+                        </label>
+                        <input type="email" class="form-control form-control-sm" id="re-pass">
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-sm btn-primary">تایید</button>
+                    </div>
+                </form>
+            </div>
+            <small>ثبت نام نکرده اید؟ <a href="Signup.html">ثبت نام کنید</a></small>
+            <button type="submit" class="btn btn-block btn-primary mt-3" id="Button">
+                ورود
+            </button>
+        </form>
+
+    </div>
+
+    <!--alert-->
+    <div class="alert alert-danger" role="alert" id="Alert">
+        <p class="m-0 p-0"><i class="fa fa-exclamation-triangle mx-1"></i>نام کاربری اشتباه است.</p>
+    </div>
+
+</div>
+
+
+</body>
+<script>
+    let countDownTarget = new Date().getTime() + 60 * 1000;
+
+    function showClock(target) {
+        const distance = target - new Date().getTime();
+        const mins = distance < 0 ? 0 : Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const secs = distance < 0 ? 0 : Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("minutes").innerHTML = mins;
+        document.getElementById("seconds").innerHTML = secs;
+    }
+
+    showClock(countDownTarget);
+
+    let x = setInterval(function () {
+        showClock(countDownTarget);
+        if (countDownTarget - new Date().getTime() < 0) {
+            clearInterval(x);
+        }
+    }, 1000);</script>
+
+<script src="js/validation-register.js"></script>
+</html>

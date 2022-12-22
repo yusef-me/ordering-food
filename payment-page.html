@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>پرداخت</title>
+    <meta name="viewport"
+          content="width=device-width, user-scale=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="links/css/bootstrap.min.css">
+    <script src="links/js/jquery.min.js"></script>
+    <script src="links/js/popper.min.js"></script>
+    <script src="links/js/bootstrap.min.js"></script>
+    <link rel="icon" href="img/spoon-icon.PNG">
+    <link rel="stylesheet" href="css/payment-style.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+
+<!--logo navbar-->
+<nav class="navbar navbar-light d-flex justify-content-center align-items-center" id="logo-navbar">
+    <a class="navbar-brand text-light" href="home-page.html">
+        <h2>رستوران</h2>
+    </a>
+</nav>
+
+
+<!--navbar-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" id="Navbar">
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbar-items" aria-controls="navabr-items" aria-expanded="false">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!--content-right-navbar-->
+    <div class="collapse navbar-collapse" id="navbar-items">
+        <div class="navbar-nav float-right">
+            <div class="dropdown mr-2">
+                <a class="nav-item nav-link dropdown dropdown-toggle font-weight-bold text-dark"
+                   data-toggle="dropdown" href="#">
+                    <i class="fa fa-user-circle-o ml-2"></i>حساب کاربری
+                </a>
+                <div class="dropdown-menu text-center">
+                    <a class="dropdown-item">
+                        موجودی حساب:
+                        <p class="text-success">365.02 تومان</p>
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="cart-page.html">سفارشات</a>
+                    <a class="dropdown-item" href="#">شارژ کیف پول</a>
+                    <i class="fa fa-power-off text-center mt-3 red" title="خروج از حساب"></i>
+                </div>
+            </div>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="home-page.html">صفحه اصلی</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="product-page.html">محصولات</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="aboutus-page.html">درباره ما</a>
+            <a class="nav-item nav-link font-weight-bold text-dark" href="contactus-page.html">ارتباط با ما</a>
+            <div class="search-shoppingcart-container d-block d-sm-none">
+                <a class="nav-search-btn btn" data-toggle="modal" data-target="#search-modal">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a type="button" class="nav-shoppingcart-btn btn" href="cart-page.html">
+                    <span class="badge badge-danger ml-1">4</span>
+                    <i class="fa fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!--content-left-navbar-->
+    <div class="d-flex" id="content-left-navbar">
+        <a class="d-none d-sm-block btn" data-toggle="modal" data-target="#search-modal">
+            <i class="fa fa-search"></i>
+        </a>
+        <a type="button" class="d-none d-sm-block btn" href="cart-page.html">
+            <span class="badge badge-danger ml-1">4</span>
+            <i class="fa fa-shopping-cart"></i>
+        </a>
+        <a type="button" href="Login.html" class="register-btn btn btn-outline-info">
+            ورود
+            /
+            ثبت نام
+        </a>
+    </div>
+
+</nav>
+
+
+<!--information-->
+<div class="container mt-4 info-content">
+
+    <!--title-->
+    <h3 class="text-center">اطلاعات ارسال</h3>
+    <hr>
+
+    <!--alert-->
+    <div class="col-12 col-md-6 mx-auto">
+        <div class="alert alert-success alert-dismissible text-center fade show" role="alert">
+            سفارش شما با <strong>موفقیت</strong> ثبت شد
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-12 col-md-8">
+            <div class="card card-body border-0">
+
+                <!--user-info-->
+                <div class="card card-body text-right info-card">
+                    <h6>آدرس تحویل سفارش</h6>
+                    <p>خراسان رضوی، مشهد، مشهد_بلوار فکوری_فکوری 23_برکپور 1_پلاک 24، پلاک ۲۴، واحد ۴</p>
+                    <h6>مشخصات گیرنده</h6>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <p><i class="fa fa-user ml-1"></i>یوسف مهدی زاده</p>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <p><i class="fa fa-phone ml-1"></i>09154240161</p>
+                        </div>
+                    </div>
+
+
+                    <!--edit-address-btn-->
+                    <a data-toggle="collapse" href="#edit-address" role="button"
+                       aria-expanded="false" aria-controls="edit-address">
+                        <small>تغییر یا ویرایش آدرس<i class="fa fa-caret-left mr-1"></i></small>
+                    </a>
+
+
+                    <!--edit-address-collapse-->
+                    <div class="collapse" id="edit-address">
+                        <div class="card card-body mt-3">
+                            <div class="card-deck row">
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2">
+                                    <div class="card container border-info">
+                                        <div class="row container">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                       value="option1" checked>
+                                            </div>
+                                            <a type="button" class="btn red" title="حذف">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                            <a type="button" class="btn red"
+                                               data-toggle="modal" data-target="#edit-address-modal"
+                                               title="ویرایش">
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <p>خراسان رضوی، مشهد، مشهد_بلوار فکوری_فکوری 23_برکپور 1_پلاک 24، پلاک ۲۴،
+                                            واحد ۴</p>
+                                        <p class="text-black-50">
+                                            <i class="fa fa-user ml-1"></i><small>یوسف مهدی زاده</small>
+                                        </p>
+                                        <p class="text-black-50">
+                                            <i class="fa fa-phone ml-1"></i><small>09154240161</small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-lg-4 mb-2">
+                                    <div class="card container border-info">
+                                        <div class="row container">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="radio" name="exampleRadios"
+                                                       value="option1" checked>
+                                            </div>
+                                            <a type="button" class="btn red" title="حذف">
+                                                <i class="fa fa-trash-o"></i>
+                                            </a>
+                                            <a type="button" class="btn red"
+                                               data-toggle="modal" data-target="#edit-address-modal"
+                                               title="ویرایش">
+                                                <i class="fa fa-pencil"></i>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <p>خراسان رضوی، مشهد، مشهد_بلوار فکوری_فکوری 23_برکپور 1_پلاک 24، پلاک ۲۴،
+                                            واحد ۴</p>
+                                        <p class="text-black-50">
+                                            <i class="fa fa-user ml-1"></i><small>یوسف مهدی زاده</small>
+                                        </p>
+                                        <p class="text-black-50">
+                                            <i class="fa fa-phone ml-1"></i><small>09154240161</small>
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!--new-address-->
+                                <div class="col-12 col-sm-6 col-lg-4 my-auto">
+                                    <div class="card border-0">
+                                        <a type="button" class="btn btn-outline-danger"
+                                           data-toggle="modal" data-target="#edit-address-modal"
+                                           title="ایجاد آدرس جدید">
+                                            <i class="fa fa-plus"></i>
+                                            <p>ایجاد آدرس جدید</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <h6 class="text-black-50">5 غذا موجود در سبد خرید</h6>
+                    <div class="row">
+                        <div class="col-12 text-center col-sm-4 col-md-3">
+                            <img src="img/home-top-img2.jpg" class="ingredients img-fluid rounded-circle" alt="">
+                            <p class="">قرمه سبزی
+                                <span class="badge rounded-circle border border-success text-success" title="تعداد">
+                                    4
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 text-center col-sm-4 col-md-3">
+                            <img src="img/home-top-img2.jpg" class="ingredients img-fluid rounded-circle" alt="">
+                            <p class="">قرمه سبزی
+                                <span class="badge rounded-circle border border-success text-success" title="تعداد">
+                                    4
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 text-center col-sm-4 col-md-3">
+                            <img src="img/home-top-img2.jpg" class="ingredients img-fluid rounded-circle" alt="">
+                            <p class="">قرمه سبزی
+                                <span class="badge rounded-circle border border-success text-success" title="تعداد">
+                                    4
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 text-center col-sm-4 col-md-3">
+                            <img src="img/home-top-img2.jpg" class="ingredients img-fluid rounded-circle" alt="">
+                            <p class="">قرمه سبزی
+                                <span class="badge rounded-circle border border-success text-success" title="تعداد">
+                                    4
+                                </span>
+                            </p>
+                        </div>
+                        <div class="col-12 text-center col-sm-4 col-md-3">
+                            <img src="img/home-top-img2.jpg" class="ingredients img-fluid rounded-circle" alt="">
+                            <p class="">قرمه سبزی
+                                <span class="badge rounded-circle border border-success text-success" title="تعداد">
+                                    4
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--info-card-->
+        <div class="col-12 col-md-4 d-none d-md-block">
+            <div class="card border-0 d-none d-md-block buy-card">
+                <div class="card-body">
+                    <section class="card border-danger d-flex mx-auto card-buy-info">
+                        <div class="card-body">
+                            <div class="row text-black-50">
+                                <h6>قیمت کالاها(4):</h6>
+                                <span class="font-weight-bold mr-auto">۶۴٫۰۰۰
+                                <small>تومان</small>
+                                 </span>
+                            </div>
+                            <div class="row text-danger">
+                                <h6>تخفیف کل:</h6>
+                                <span class="font-weight-bold mr-auto">۴٫۰۰۰
+                                <small>تومان</small>
+                                </span>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h6>مبلغ قابل پرداخت:</h6>
+                                <span class="font-weight-bold mr-auto">۶۰٫۰۰۰
+                                <small>تومان</small>
+                                </span>
+                            </div>
+                            <button type="button" class="btn btn-danger btn-block mt-3">
+                                پرداخت
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--mobile-mode-card-->
+<section class="card fixed-bottom rounded-0 d-block d-md-none">
+    <div class="card-body">
+        <div class="row d-flex flex-wrap justify-content-center align-items-center text-center text-sm-right">
+            <div class="col col-12 col-sm-6">
+                <div class="d-block text-black-50">
+                    <h6 class="d-inline m-0 p-0">قیمت کالاها(4):</h6>
+                    <p class="d-inline mr-auto m-0 p-0">۶۴٫۰۰۰
+                        <small>تومان</small>
+                    </p>
+                </div>
+                <div class="d-block text-danger">
+                    <h6 class="d-inline m-0 p-0">تخفیف کل:</h6>
+                    <p class="d-inline mr-auto m-0 p-0">۴٫۰۰۰
+                        <small>تومان</small>
+                    </p>
+                </div>
+                <div class="d-block">
+                    <h6 class="d-inline m-0 p-0">مبلغ قابل پرداخت:</h6>
+                    <p class="d-inline mr-auto m-0 p-0">۶۰٫۰۰۰
+                        <small>تومان</small>
+                    </p>
+                </div>
+            </div>
+            <div class="mr-auto col-12 col-sm-6 text-center text-sm-left">
+                <button type="button" class="btn btn-danger mt-2 mt-sm-0">تکمیل فرایند خرید</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--footer-->
+<footer class="footer bg-dark text-light container-fluid d-none d-md-block py-1">
+    <p class="text-center mt-1">رستوران، فروشگاه اینترنتی خرید وعده غذایی در مشهد.</p>
+    <hr>
+    <div class="d-flex flex-column justify-content-center align-items-center text-center">
+        <div>
+            <p class="m-0">رستوران را در شبکه های اجتماعی دنبال کنید:</p>
+            <a href="#" class="btn fa fa-instagram text-danger"></a>
+            <a href="#" class="btn fa fa-telegram text-danger"></a>
+            <a href="#" class="btn fa fa-facebook text-danger"></a>
+            <a href="#" class="btn fa fa-youtube-play text-danger"></a>
+            <a href="#" class="btn fa fa-twitter text-danger"></a>
+        </div>
+
+        <small>
+            <i class="fa fa-copyright ml-2"></i>
+            تمامی حقوق مادی و معنوی این سایت متعلق به
+            رستوران می باشد. ۱۴۰۰
+        </small>
+    </div>
+</footer>
+
+
+<!--scroll-btn-->
+<a href="#" id="scroll-btn"><span></span></a>
+
+
+<!--edit-address-modal-->
+<div class="modal fade" id="edit-address-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-right">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
+                        title="بستن صفحه">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <br><br>
+                <form>
+                    <label for="address-input">آدرس</label>
+                    <input class="form-control edit-input" type="text" id="address-input">
+                    <br>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label for="user-input">نام و نام خانوادگی گیرنده</label>
+                            <input class="form-control edit-input" type="text" id="user-input">
+                            <br>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <label for="phone-input">شماره موبایل گیرنده</label>
+                            <input class="form-control edit-input" type="text" id="phone-input">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-3 mt-sm-0 edit-btn">
+                        ثبت اطلاعات
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--search-modal-->
+<div class="modal fade" id="search-modal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+            <div class="modal-body bg-transparent">
+                <form>
+                    <div class="input-group" style="direction: ltr">
+                        <input class="form-control rounded-left flex-fill text-right"
+                               type="search" placeholder="جستجو"/>
+                        <div class="input-group-append">
+                            <button class="btn btn-secondary" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
+<!--tooltip-js-->
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+
+<!--scroll-btn-js-->
+<script src="js/scroll-btn.js"></script>
+
+</html>
